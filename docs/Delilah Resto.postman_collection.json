@@ -1,0 +1,744 @@
+{
+	"info": {
+		"_postman_id": "f1cd1dc7-594e-4f0c-bee2-df65d98cee2d",
+		"name": "Delilah Resto",
+		"description": "API para operaciones CRUD de una app de manejo de pedidos de un restaurante",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJpc0FkbWluIjpmYWxzZX0sImlhdCI6MTYyNTc3MzY4MX0.bzpXvtwh13cc2lmQg2Mb_SjGok7ISJM4aHP24U-XWXs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJpc0FkbWluIjpmYWxzZX0sImlhdCI6MTYyNTc3MzI2MH0.iEFCiJmitKdubFdsS1SrF_QDWthvwMDdkK62CDURVt0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3003/user",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user by userId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfaWQiOjIsImlzX2FkbWluIjpmYWxzZX0sImlhdCI6MTYyNjE0MDI3NH0.21dlVfs5ae0TY3il8i1lBEOgPhFtZm5IrO_TjecSrv4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJpc0FkbWluIjpmYWxzZX0sImlhdCI6MTYyNTc3MzI2MH0.iEFCiJmitKdubFdsS1SrF_QDWthvwMDdkK62CDURVt0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3003/user/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"user",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user by userId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJpc0FkbWluIjp0cnVlfSwiaWF0IjoxNjI1OTUyNTcwfQ.alE5uHZWhJEAcyHAZqdUlu14a7GeuuOq5OFX228EcVw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJpc0FkbWluIjpmYWxzZX0sImlhdCI6MTYyNTc3MzI2MH0.iEFCiJmitKdubFdsS1SrF_QDWthvwMDdkK62CDURVt0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3003/user/9",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"user",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": \"ALEJANDRO\",\n    \"name\": \"ALEJANDRO REINA\",\n    \"email\": \"alejandro@gmail.com\",\n    \"phone\": \"56978456442\",\n    \"address\": \"San Miguel 1233, 1702, Santiago\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/user",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJpc0FkbWluIjp0cnVlfSwiaWF0IjoxNjI1OTUyNTcwfQ.alE5uHZWhJEAcyHAZqdUlu14a7GeuuOq5OFX228EcVw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"NICOLAS REINA\",\n    \"phone\": \"56978456442\",\n    \"address\": \"La Florida 1233, 302, Santiago\",\n    \"password\": \"ABC123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/user/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"user",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Modulo de usuarios"
+		},
+		{
+			"name": "favorite",
+			"item": [
+				{
+					"name": "favorite id by userId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJpc0FkbWluIjp0cnVlfSwiaWF0IjoxNjI1OTUyNTcwfQ.alE5uHZWhJEAcyHAZqdUlu14a7GeuuOq5OFX228EcVw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJpc0FkbWluIjpmYWxzZX0sImlhdCI6MTYyNTc3MzI2MH0.iEFCiJmitKdubFdsS1SrF_QDWthvwMDdkK62CDURVt0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3003/user/2/favorite/18",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"user",
+								"2",
+								"favorite",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "favorites by userId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJpc0FkbWluIjpmYWxzZX0sImlhdCI6MTYyNTc3MzY4MX0.bzpXvtwh13cc2lmQg2Mb_SjGok7ISJM4aHP24U-XWXs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJpc0FkbWluIjpmYWxzZX0sImlhdCI6MTYyNTc3MzI2MH0.iEFCiJmitKdubFdsS1SrF_QDWthvwMDdkK62CDURVt0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3003/user/2/favorite",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"user",
+								"2",
+								"favorite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "favorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJpc0FkbWluIjpmYWxzZX0sImlhdCI6MTYyNTc3MzY4MX0.bzpXvtwh13cc2lmQg2Mb_SjGok7ISJM4aHP24U-XWXs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": 7,\n    \"product_id\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/favorite",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"favorite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "favorite",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJpc0FkbWluIjpmYWxzZX0sImlhdCI6MTYyNTc3MzY4MX0.bzpXvtwh13cc2lmQg2Mb_SjGok7ISJM4aHP24U-XWXs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/favorite",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"favorite"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Modulo de Favoritos"
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"user\": \"RMORENO\",\n   \"password\": \"123456\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"user\": \"ADMIN\",\n   \"password\": \"ADMIN\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Modulo de Login"
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJpc0FkbWluIjp0cnVlfSwiaWF0IjoxNjI2MDUwNTUzfQ.u02WJcdZUoNfp1TdCpzm5_KwCOo9y82xRj5_br9ResQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"Empanada de Pollo\",\n    \"price\": 200,\n    \"quantity_available\": 100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/product",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJpc0FkbWluIjp0cnVlfSwiaWF0IjoxNjI2MDUwNTUzfQ.u02WJcdZUoNfp1TdCpzm5_KwCOo9y82xRj5_br9ResQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"Empanada de Carne\",\n    \"price\": 210,\n    \"quantity_available\":  90\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/product/9",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"product",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJpc0FkbWluIjp0cnVlfSwiaWF0IjoxNjI2MDUwNTUzfQ.u02WJcdZUoNfp1TdCpzm5_KwCOo9y82xRj5_br9ResQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3003/product",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJpc0FkbWluIjp0cnVlfSwiaWF0IjoxNjI2MDUwNTUzfQ.u02WJcdZUoNfp1TdCpzm5_KwCOo9y82xRj5_br9ResQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3003/product/9",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"product",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJpc0FkbWluIjp0cnVlfSwiaWF0IjoxNjI2MDUwNTUzfQ.u02WJcdZUoNfp1TdCpzm5_KwCOo9y82xRj5_br9ResQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3003/product/9",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"product",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Modulo de Productos"
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfaWQiOjUsImlzX2FkbWluIjpmYWxzZX0sImlhdCI6MTYyNjEwMjg2Nn0.6DFROa8cf5-47lBhAejyobRashzB5Kk4L1bN1Kd0rEM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status_id\": 1,\n    \"date\": \"2021-07-12 22:01:33\",\n    \"total_amount\": 800,\n    \"pay_type_id\": 3,\n    \"order_product\": [\n        {\n            \"product_id\": 3,\n            \"quantity\": 1,\n            \"price\": 300\n        },\n        {\n            \"product_id\": 4,\n            \"quantity\": 2,\n            \"price\": 140\n        },\n            {\n            \"product_id\": 5,\n            \"quantity\": 1,\n            \"price\": 20,\n            \"comments\": \"Sin tomate\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/order",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfaWQiOjUsImlzX2FkbWluIjpmYWxzZX0sImlhdCI6MTYyNjEwMjg2Nn0.6DFROa8cf5-47lBhAejyobRashzB5Kk4L1bN1Kd0rEM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status_id\": 1,\n    \"date\": \"2021-07-12 22:01:33\",\n    \"pay_type_id\": 3,\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/order/26",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"order",
+								"26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfaWQiOjMsImlzX2FkbWluIjp0cnVlfSwiaWF0IjoxNjI2MTE5MDUzfQ.W2TIyYFiWy6_ZuCsqelExQMK_M9zC55y1_JP2watQ38",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/order",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order by userId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfaWQiOjMsImlzX2FkbWluIjp0cnVlfSwiaWF0IjoxNjI2MTE5MDUzfQ.W2TIyYFiWy6_ZuCsqelExQMK_M9zC55y1_JP2watQ38",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/order",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Modulo de Ordenes"
+		}
+	],
+	"variable": [
+		{
+			"key": "token_not_admin",
+			"value": "eyJ1c2VyIjp7InVzZXJfaWQiOjIsImlzX2FkbWluIjpmYWxzZX0sImlhdCI6MTYyNjE0MDI3NH0.21dlVfs5ae0TY3il8i1lBEOgPhFtZm5IrO_TjecSrv4"
+		},
+		{
+			"key": "token_admin",
+			"value": "eyJ1c2VyIjp7InVzZXJfaWQiOjMsImlzX2FkbWluIjp0cnVlfSwiaWF0IjoxNjI2MTI3ODUzfQ"
+		}
+	]
+}
