@@ -228,7 +228,41 @@ class Order {
         }
     };
 
+    // delete order by id
+    static async delete(req, res) {
 
+        try {
+            const orderProducts = await orders_has_productsModels.destroy({
+                where: {
+                    order_id: req.params.id
+                }
+            });
+
+            const order = await orderModels.destroy({
+                where: {
+                    id: req.params.id
+                }
+            });
+
+            if (!order) {
+                return res.status(404).json({
+                    status: 404,
+                    message: 'order not found'
+                });
+            }
+
+            return res.status(202).json({
+                status: 202,
+                message: 'order removed'
+            });
+
+        } catch (error) {
+            return res.status(500).json({
+                status: 500,
+                error: error.message
+            })
+        }
+    };
 }
 
 module.exports = Order;

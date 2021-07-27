@@ -15,5 +15,8 @@ api.get('/order', ensureAuth, adminValidation, OrderController.getAll);
 // order update
 api.put('/order/:id', ensureAuth, adminValidation, OrderController.update);
 
+// order update
+api.delete('/order/:id', ensureAuth, adminValidation, OrderController.delete);
+
 
 module.exports = api;

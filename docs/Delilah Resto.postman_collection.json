@@ -649,6 +649,44 @@
 				},
 				{
 					"name": "order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfaWQiOjUsImlzX2FkbWluIjpmYWxzZX0sImlhdCI6MTYyNjEwMjg2Nn0.6DFROa8cf5-47lBhAejyobRashzB5Kk4L1bN1Kd0rEM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status_id\": 1,\n    \"date\": \"2021-07-12 22:01:33\",\n    \"pay_type_id\": 3,\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/order/26",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"order",
+								"26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
